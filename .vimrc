@@ -437,3 +437,38 @@ endfunction
 " if has("autocmd")
 "   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Maintainer: 
+"       Alessandro Ronca 
+"
+" Version: 
+"      1.0 - 13/05/18
+"
+" Download:
+"      https://raw.githubusercontent.com/RncLsn/vim_configuration/.vimrc 
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Map local leader
+let maplocalleader = ','
+
+" Set Solarized color scheme
+try
+    colorscheme solarized
+catch
+endtry
+
+set background=dark
+
+" Move easily to the beginning and end of the line
+map H 0
+map L $
+
+" 80 characters line
+set colorcolumn=80
+
+" Toggle NERDTree
+nnoremap <C-n> :NERDTreeToggle<CR>
+
